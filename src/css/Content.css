@@ -546,7 +546,7 @@
   margin: 70px 0 0 0;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 20px;
+  gap: 28px;
 }
 
 .project-1,
@@ -571,12 +571,40 @@
   position: absolute;
   width: 400px;
   height: 0;
-  margin: -198px 0 0 0;
-  transition: height 0.3s ease-in-out;
+  margin: -220px 0 0 0;
+  overflow-x: hidden;
+  transition: height 0.2s ease-in-out;
 }
 
 .project-1:hover .second-ct-pj,
 .project-2:hover .second-ct-pj,
 .project-3:hover .second-ct-pj {
-  height: 198.65px;
+  height: 220px;
+}
+
+.second-ct-pj p {
+  display: block;
+  margin: 50px 0 0 20px;
+  font-size: 0.9rem;
+  font-family: var(--font-quiksand);
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.project-1:hover .second-ct-pj p {
+  display: block;
+}
+
+.project-1 .second-ct-pj .title-pj,
+.project-2 .second-ct-pj .title-pj,
+.project-3 .second-ct-pj .title-pj {
+  position: absolute;
+  margin: 18px 0 0 19px;
+  font-size: 1.3rem;
+}
+
+.project-1 .second-ct-pj .des-pj,
+.project-2 .second-ct-pj .des-pj,
+.project-3 .second-ct-pj .des-pj {
+  color: #d8d7d796;
 }

@@ -12,6 +12,7 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experince";
 import Work from "./Work";
+import Contact from "./Contact";
 
 const Content = () => {
   return (
@@ -34,6 +35,7 @@ const Content = () => {
           <Education id="education" />
           <Experience id="experience" />
           <Work id="work" />
+          <Contact id="contact" />
         </div>
       </Container>
     </>
