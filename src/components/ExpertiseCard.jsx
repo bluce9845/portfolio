@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+import WorldIcon from "../../public/icons/world.png";
+import bulbIcon from "../../public/icons/bulb.png";
+import dbIcon from "../../public/icons/database.png";
 
 const ExpertiseCard = () => {
   return (
@@ -7,7 +11,7 @@ const ExpertiseCard = () => {
         <div className="card-web-design rounded-2" data-aos="fade-right">
           <div className="world-icon">
             <img
-              src="../../public/icons/world.png"
+              src={WorldIcon}
               width={"50px"}
               alt="word icon"
               style={{
@@ -20,7 +24,7 @@ const ExpertiseCard = () => {
 
         <div className="card-frontend rounded-2 ms-4" data-aos="fade-right">
           <img
-            src="../../public/icons/bulb.png"
+            src={bulbIcon}
             width={"50px"}
             alt="word icon"
             style={{
@@ -32,7 +36,7 @@ const ExpertiseCard = () => {
 
         <div className="card-backend rounded-2 ms-4" data-aos="fade-right">
           <img
-            src="../../public/icons/database.png"
+            src={dbIcon}
             width={"50px"}
             alt="word icon"
             style={{
