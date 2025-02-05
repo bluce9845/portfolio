@@ -3,6 +3,7 @@ import { FaGithub, FaShareAlt, FaHeart } from "react-icons/fa";
 import ReservationImg from "../../public/project-img/tickt-wbste.png";
 import instagramCloneImg from "../../public/project-img/instagram-wbste.png";
 import vespaImg from "../../public/project-img/vespa-wbste.png";
+import RsImg from "../../public/project-img/rs-wbste.png";
 
 const Work = ({ id }) => {
   const [activeTab, setActiveTab] = useState("Web Project");
@@ -39,7 +40,7 @@ const Work = ({ id }) => {
       },
       // Data Web Design
       {
-        img: "../../public/project-img/rs-wbste.png",
+        img: RsImg,
         backgroundColor: "#f9a825",
         titlePj: "UI/UX Design",
         desPj: "UI/UX prototype for mobile app using Figma",

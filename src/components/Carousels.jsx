@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Carou1Img from "../../public/profile-img/profile-1.png";
 import Carou2Img from "../../public/profile-img/profile-2.png";
 
@@ -77,7 +77,7 @@ const Carousels = ({ id }) => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              src={Carou2Img  }
+              src={Carou2Img}
               alt=""
               style={{
                 margin: "48px 0 0 360px",
