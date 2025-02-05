@@ -1,4 +1,5 @@
 import React from "react";
+import PencilIcon from "../../public/icons/icons8-pencil-64.png";
 
 const Experience = ({ id }) => {
   return (
@@ -19,7 +20,7 @@ const Experience = ({ id }) => {
 
         <div className="experience-wrap">
           <div className="icons-ex position-absolute rounded-circle">
-            <img src="../../public/icons/icons8-pencil-64.png" className="position-absolute img-icn text-center" width={"35"} alt="" />
+            <img src={PencilIcon} className="position-absolute img-icn text-center" width={"35"} alt="" />
           </div>
           <div className="wrap-chat-bublle" data-aos="fade-right">
             <div className="position-relative p-3 ms-5 shadow chat-bubble">
