@@ -1,5 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { FaGithub, FaShareAlt, FaHeart } from "react-icons/fa";
+import ReservationImg from "../../public/project-img/tickt-wbste.png";
+import instagramCloneImg from "../../public/project-img/instagram-wbste.png";
+import vespaImg from "../../public/project-img/vespa-wbste.png";
 
 const Work = ({ id }) => {
   const [activeTab, setActiveTab] = useState("Web Project");
@@ -11,7 +14,7 @@ const Work = ({ id }) => {
   const projectData = useMemo(
     () => [
       {
-        img: "../../public/project-img/tickt-wbste.png",
+        img: ReservationImg,
         backgroundColor: "#2c98f0",
         titlePj: "Ticket Reservation",
         desPj: "Airline ticket booking website, which I created using Django",
@@ -19,7 +22,7 @@ const Work = ({ id }) => {
         aos: "fade-right",
       },
       {
-        img: "../../public/project-img/instagram-wbste.png",
+        img: instagramCloneImg,
         backgroundColor: "#ec5453",
         titlePj: "Instagram Clone",
         desPj: "The Instagram clone that I made using Django, has post, like post, follow account features",
@@ -27,7 +30,7 @@ const Work = ({ id }) => {
         aos: "fade-left",
       },
       {
-        img: "../../public/project-img/vespa-wbste.png",
+        img: vespaImg,
         backgroundColor: "#a84cb8",
         titlePj: "Vespa Website",
         desPj: "Vespa website, I created this website for the purpose of introducing motorbikes from Italian",

@@ -2,8 +2,9 @@
 import React, { useState, useEffect, useMemo } from "react";
 import NumberCounter from "./NumberCounter";
 
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
+import WebDesignImg from "../../public/icons/webDesign.png";
+import FrontendImg from "../../public/icons/frontend.png";
+import BackendImg from "../../public/icons/backend.png";
 
 const Services = ({ id }) => {
   return (
@@ -25,7 +26,7 @@ const Services = ({ id }) => {
         <div className="content-services d-flex">
           <div className="wb-dsgn-crd" data-aos="fade-right">
             <div className="ct-img-dsgn position-absolute">
-              <img src="../../public/icons/webDesign.png" alt="wb-dsgn" />
+              <img src={WebDesignImg} alt="wb-dsgn" />
             </div>
             <h5
               style={{
@@ -41,7 +42,7 @@ const Services = ({ id }) => {
           </div>
           <div className="wb-fe-crd ms-4" data-aos="fade-up">
             <div className="ct-img-fe position-absolute">
-              <img src="../../public/icons/frontend.png" alt="wb-fe" />
+              <img src={FrontendImg} alt="wb-fe" />
             </div>
             <h5>FRONTEND DEVELOPER</h5>
             <p className="ct-svrcs-fe text-center">
@@ -51,7 +52,7 @@ const Services = ({ id }) => {
           </div>
           <div className="wb-be-crd ms-4" data-aos="fade-left">
             <div className="ct-img-be position-absolute">
-              <img src="../../public/icons/backend.png" alt="wb-be" />
+              <img src={BackendImg} alt="wb-be" />
             </div>
             <h5
               style={{

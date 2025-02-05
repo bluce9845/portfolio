@@ -4,7 +4,6 @@ import Stack from "@mui/joy/Stack";
 import Typography from "@mui/joy/Typography";
 import CircularProgress from "@mui/joy/CircularProgress";
 import { useCountUp } from "use-count-up";
-import PropTypes from "prop-types";
 import Slider from "react-slick";
 
 const Skills = ({ id }) => {

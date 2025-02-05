@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Carou1Img from "../../public/profile-img/profile-1.png";
+import Carou2Img from "../../public/profile-img/profile-2.png";
 
 import Carousel from "react-bootstrap/Carousel";
 import { IoDownloadOutline } from "react-icons/io5";
@@ -36,7 +38,7 @@ const Carousels = ({ id }) => {
         >
           <Carousel.Item>
             <img
-              src="../../public/profile-img/profile-1.png"
+              src={Carou1Img}
               alt="first profile"
               style={{
                 margin: "48px 0 0 300px",
@@ -75,7 +77,7 @@ const Carousels = ({ id }) => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              src="../../public/profile-img/profile-2.png"
+              src={Carou2Img  }
               alt=""
               style={{
                 margin: "48px 0 0 360px",
