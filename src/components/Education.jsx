@@ -2,8 +2,6 @@ import React, { useState, useEffect, useMemo } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
-
-
 const Education = ({ id }) => {
   const [activeKey, setActiveKey] = useState(null);
 
@@ -20,8 +18,12 @@ const Education = ({ id }) => {
           margin: "260px 0 0 38px",
         }}
       >
-        <p className="head">EDUCATION</p>
-        <h4 className="second-head">EDUCATION</h4>
+        <p className="head" data-aos="fade-right">
+          EDUCATION
+        </p>
+        <h4 className="second-head" data-aos="fade-up">
+          EDUCATION
+        </h4>
 
         <div className="ct-education">
           <Accordion
@@ -33,7 +35,7 @@ const Education = ({ id }) => {
               margin: "140px 0 0 0",
             }}
           >
-            <Accordion.Item eventKey="0" className="accd-itm">
+            <Accordion.Item eventKey="0" className="accd-itm" data-aos="fade-right">
               <Accordion.Header
                 onClick={() => handleToggle("0")}
                 className="accd-head"
@@ -55,7 +57,7 @@ const Education = ({ id }) => {
               </Accordion.Body>
             </Accordion.Item>
 
-            <Accordion.Item eventKey="1" className="accd-itm">
+            <Accordion.Item eventKey="1" className="accd-itm" data-aos="fade-left">
               <Accordion.Header
                 onClick={() => handleToggle("1")}
                 className="accd-head"
@@ -78,7 +80,7 @@ const Education = ({ id }) => {
               </Accordion.Body>
             </Accordion.Item>
 
-            <Accordion.Item eventKey="2" className="accd-itm">
+            <Accordion.Item eventKey="2" className="accd-itm" data-aos="fade-up">
               <Accordion.Header
                 onClick={() => handleToggle("2")}
                 className="accd-head"

@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ExpertiseCard = () => {
   return (
     <>
       <div className="expertise-card d-flex">
-        <div className="card-web-design rounded-2">
+        <div className="card-web-design rounded-2" data-aos="fade-right">
           <div className="world-icon">
             <img
               src="../../public/icons/world.png"
@@ -19,7 +18,7 @@ const ExpertiseCard = () => {
           </div>
         </div>
 
-        <div className="card-frontend rounded-2 ms-4">
+        <div className="card-frontend rounded-2 ms-4" data-aos="fade-right">
           <img
             src="../../public/icons/bulb.png"
             width={"50px"}
@@ -31,7 +30,7 @@ const ExpertiseCard = () => {
           <p className="frontend mt-4 fw-medium">Frontend Developer</p>
         </div>
 
-        <div className="card-backend rounded-2 ms-4">
+        <div className="card-backend rounded-2 ms-4" data-aos="fade-right">
           <img
             src="../../public/icons/database.png"
             width={"50px"}

@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ExpertiseCard from "./ExpertiseCard";
 import CardProjectSuccess from "./CardProjectSuccess";
 import InformationAbout from "./InformationAbout";
@@ -14,8 +13,12 @@ const About = ({ id }) => {
           margin: "250px 0 0 38px",
         }}
       >
-        <p className="head">ABOUT US</p>
-        <h4 className="second-head">WHO AM I?</h4>
+        <p className="head" data-aos="fade-right">
+          ABOUT US
+        </p>
+        <h4 className="second-head" data-aos="fade-up">
+          WHO AM I?
+        </h4>
 
         <div
           className="about-content"

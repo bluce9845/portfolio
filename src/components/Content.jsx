@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import Container from "react-bootstrap/Container";
@@ -13,6 +12,7 @@ import Education from "./Education";
 import Experience from "./Experince";
 import Work from "./Work";
 import Contact from "./Contact";
+import SpacingBottom from "./SpacingBottom";
 
 const Content = () => {
   return (
@@ -36,6 +36,7 @@ const Content = () => {
           <Experience id="experience" />
           <Work id="work" />
           <Contact id="contact" />
+          <SpacingBottom />
         </div>
       </Container>
     </>

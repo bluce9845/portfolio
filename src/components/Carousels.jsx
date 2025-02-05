@@ -1,10 +1,27 @@
+import React, { useEffect, useState } from "react";
+
 import Carousel from "react-bootstrap/Carousel";
 import { IoDownloadOutline } from "react-icons/io5";
 import { PiBag } from "react-icons/pi";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "../css/Content.css";
 
 const Carousels = ({ id }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 0,
+      once: false,
+    });
+
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 100);
+  }, []);
+
   return (
     <>
       <section id={id}>
@@ -12,7 +29,7 @@ const Carousels = ({ id }) => {
           controls={false}
           indicators={false}
           slide={false}
-          interval={11000}
+          interval={5000}
           style={{
             margin: "0 0 0 0",
           }}
@@ -31,10 +48,21 @@ const Carousels = ({ id }) => {
                 margin: "0 0 0 -70px",
               }}
             >
-              <h3>Hi!</h3>
-              <h2>I&apos;m Rizki</h2>
-              <button className="btn-cv">
-                DOWNLOAD CV{" "}
+              <div className="name-ct aos-init aos-animate">
+                <h3>Hi!</h3>
+                <h2>I&apos;m Rizki</h2>
+              </div>
+              <button
+                className="btn-cv"
+                data-aos="fade-up"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "../../public/CV/Rizki_CV.pdf";
+                  link.download = "Rizki_CV.pdf";
+                  link.click();
+                }}
+              >
+                DOWNLOAD CV
                 <span>
                   <IoDownloadOutline
                     style={{
@@ -59,11 +87,13 @@ const Carousels = ({ id }) => {
                 margin: "0 0 0 -70px",
               }}
             >
-              <h3>I&apos;m a</h3>
-              <h2>Frontend Developer</h2>
-              <h2 className="stdnt">& Student</h2>
-              <p className="school fw-medium">School at SMK PGRI 2 PONOROGO</p>
-              <button className="btn-porto">
+              <div className="wrap-inf" data-aos="fade-right">
+                <h3>I&apos;m a</h3>
+                <h2>Frontend Developer</h2>
+                <h2 className="stdnt">& Student</h2>
+                <p className="school fw-medium">School at SMK PGRI 2 PONOROGO</p>
+              </div>
+              <button className="btn-porto" data-aos="fade-up">
                 VIEW PORTFOLIO{" "}
                 <span
                   style={{

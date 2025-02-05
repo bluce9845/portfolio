@@ -608,3 +608,17 @@
 .project-3 .second-ct-pj .des-pj {
   color: #d8d7d796;
 }
+
+.form-icon-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: "icons form";
+}
+
+.form-control {
+  font-family: var(--font-quiksand);
+}
+
+.custom-button {
+  font-family: var(--font-quiksand);
+}

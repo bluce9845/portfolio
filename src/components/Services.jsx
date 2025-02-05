@@ -15,13 +15,15 @@ const Services = ({ id }) => {
           margin: "260px 0 0 38px",
         }}
       >
-        <p className="head">WHAT I DO?</p>
-        <h4 className="second-head">
+        <p className="head" data-aos="fade-right">
+          WHAT I DO?
+        </p>
+        <h4 className="second-head" data-aos="fade-up">
           Here are some of my <br /> expertise
         </h4>
 
         <div className="content-services d-flex">
-          <div className="wb-dsgn-crd">
+          <div className="wb-dsgn-crd" data-aos="fade-right">
             <div className="ct-img-dsgn position-absolute">
               <img src="../../public/icons/webDesign.png" alt="wb-dsgn" />
             </div>
@@ -37,7 +39,7 @@ const Services = ({ id }) => {
               delivering a great user experience (UX/UI) that is intuitive and easy to navigate.
             </p>
           </div>
-          <div className="wb-fe-crd ms-4">
+          <div className="wb-fe-crd ms-4" data-aos="fade-up">
             <div className="ct-img-fe position-absolute">
               <img src="../../public/icons/frontend.png" alt="wb-fe" />
             </div>
@@ -47,7 +49,7 @@ const Services = ({ id }) => {
               across different devices using CSS Grid and Flexbox, and add interactive animations and transitions to enhance the user experience.
             </p>
           </div>
-          <div className="wb-be-crd ms-4">
+          <div className="wb-be-crd ms-4" data-aos="fade-left">
             <div className="ct-img-be position-absolute">
               <img src="../../public/icons/backend.png" alt="wb-be" />
             </div>
@@ -65,7 +67,7 @@ const Services = ({ id }) => {
           </div>
         </div>
 
-        <div className="inf-srvcs">
+        <div className="inf-srvcs" data-aos="fade-left  ">
           <div className="cup-coffe">
             <p className="num">
               <NumberCounter end={402} duration={3000} />

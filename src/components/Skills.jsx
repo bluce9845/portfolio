@@ -45,10 +45,14 @@ const Skills = ({ id }) => {
           margin: "260px 0 0 38px",
         }}
       >
-        <p className="head">MY SPECIALITY</p>
-        <h4 className="second-head">MY SKILLS</h4>
+        <p className="head" data-aos="fade-right">
+          MY SPECIALITY
+        </p>
+        <h4 className="second-head" data-aos="fade-up">
+          MY SKILLS
+        </h4>
 
-        <div className="ct-skills-params">
+        <div className="ct-skills-params" data-aos="fade-left">
           <p className="skills-params">
             I specialize in PHP programming and the Laravel framework, building scalable web applications. I&apos;m also experienced with Django and React, combining them for full-stack development. To enhance user experience, I use
             Bootstrap and Swiper.js for modern, responsive designs. Beyond web development, I&apos;ve worked on computer vision projects like finger detection and face recognition, showcasing my ability to solve real-world problems with
@@ -58,6 +62,7 @@ const Skills = ({ id }) => {
 
         <div
           className="ct-skills-prgs-bar"
+          data-aos="zoom-in-up"
           style={{
             margin: "100px 0 0 0",
           }}
