@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./css/App.css";
 import Content from "./components/Content";
+import DeviceCheck from "./components/DeviceCheck";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,9 +31,11 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <Content />
-      </div>
+      <DeviceCheck>
+        <div className="App">
+          <Content />
+        </div>
+      </DeviceCheck>
     </>
   );
 }

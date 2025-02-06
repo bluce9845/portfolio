@@ -27,7 +27,7 @@ const Carousels = ({ id }) => {
 
   return (
     <>
-      <section id={id}>
+      <section id={id} className="carousel-container-ct">
         <Carousel
           controls={false}
           indicators={false}
