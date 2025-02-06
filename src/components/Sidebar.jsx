@@ -3,7 +3,6 @@ import "../css/Content.css";
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("home");
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,9 +69,6 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        ☰
-      </div>
     </>
   );
 };
