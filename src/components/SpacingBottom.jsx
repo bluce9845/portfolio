@@ -4,7 +4,7 @@ const SpacingBottom = () => {
   return (
     <>
       <div
-        className="spacing-bottom"
+        className="spacingitg-bottom"
         style={{
           margin: "50px 0 0 0",
           opacity: "-10",
